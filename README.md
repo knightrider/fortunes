@@ -30,16 +30,22 @@ $ brew install fortune
 $ sudo apt-get install fortune
 ```
 
-Then clone the repo.
+## Usage
+
+Clone the repo.
 
 ```bash
 $ git clone git@github.com:knightrider/fortunes.git
 ```
 
-## Usage
+Then build the data files.
 
 ```bash
-$ fortune [OPTIONS] [/path/to/fortunes/file]
+$ make
+```
+
+```bash
+$ fortune [OPTIONS] [/path/to/fortunes/src]
 ```
 
 ## How to automatically launch fortune when opening a shell window
@@ -47,7 +53,7 @@ $ fortune [OPTIONS] [/path/to/fortunes/file]
 Depending on which shell you use, at the end of your `~/.bashrc` or `~/.zshrc` file, copy the following lines into it.
 
 ```bash
-fortune [OPTIONS] [/path/to/fortunes/file]
+fortune [OPTIONS] [/path/to/fortunes/src/]
 ```
 
 So, that's a little boring. Snaz it up a little bit by adding `CowSay`.
@@ -69,7 +75,7 @@ $ npm install -g cowsay
 ```
 
 ```bash
-fortune | cowsay
+fortune [OPTIONS] [/path/to/fortunes/src/] | cowsay
 
 # Now you get
  _______________________________________
