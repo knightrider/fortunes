@@ -1,5 +1,5 @@
 # Fortunes
-This repo contains a collection files with quotes we like.
+This repo contains a collection of files with quotes we like.
 
 This these files can be turned into fortune database files.
 
